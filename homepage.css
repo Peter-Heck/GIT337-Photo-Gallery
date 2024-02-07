@@ -1,0 +1,334 @@
+form {
+    display: block;
+    margin: 0;
+}
+
+html{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {font-size: 1.25em;}
+figcaption, label, input, small {font-size: 1em;}
+nav a {font-size: 1.5em;}
+h1 {font-size: 3em;}
+h2 {font-size: 2em;}
+
+a:visited {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+header h1 {
+    margin: auto;
+}
+
+#white {
+    background-color: white;
+}
+
+#main-navigation {
+    background-color: black;
+    color: white;
+}
+
+#main-navigation ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 445px;
+}
+
+h1 {
+    color: #007d7b;
+    background-color: white;
+}
+
+#contact {
+    color: white;
+    margin: auto;
+}
+
+#about {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 20px;
+}
+
+#gallery-heading {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#about h2 {
+    margin: auto;
+}
+
+#gallery-heading h2 {
+    margin: auto;
+}
+
+#about p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#gallery-heading p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#heading {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#heading h2 {
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#heading p {
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+form button {
+    background-color: #007d7b;
+    color: white;
+    font-size: large;
+    border-radius: 25px;
+    border: 0;
+}
+
+form input {
+    color: #007d7b;
+    background-color: white;
+}
+
+#photos div {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#gallery div {
+    position: relative;
+}
+
+.bottom-text p {
+    margin: auto;
+    position: relative;
+    top: -40px;
+}
+
+.top-text p {
+    margin: auto;
+    position: relative;
+    top: -260px;
+}
+
+.top-text-tall p {
+    margin: auto;
+    position: relative;
+    top: -610px;
+}
+
+#top-button {
+    position: fixed;
+    z-index: 999;
+    bottom: 0px;
+    right: 25px;
+    color: white;
+    font-size: 1.5em;
+    background-color: rgb(0, 0, 0, .35);
+    border: 2px solid white;
+    padding: 10px;
+}
+
+input, label {
+    display: block;
+}
+
+label {
+    position: relative;
+    left: 20px;
+}
+
+input {
+    border: 0;
+    padding: 10px;
+}
+
+footer {
+    color: white;
+    margin: auto;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    display: none;
+}
+
+fieldset button {
+    padding: 10px;
+}
+
+#chile, #guatemala, #hawaii, #moab, #wyoming {
+    color: white;
+}
+
+
+
+/*-----------------------------------
+-------------------------------------
+            485px SCREEN
+-------------------------------------
+-----------------------------------*/
+
+@media screen and (min-width: 485px) {
+    body {
+        display: grid;
+        margin: auto;
+        grid-template-columns: 1fr;
+        width: 485px;
+    }
+
+    header h1 {
+        width: 485px;
+        margin: auto;
+    }
+
+    #photos {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    input {
+        width: 425px;
+    }
+
+    #submit-button {
+        display: grid;
+        justify-content: center;
+        width: 425px;
+    }
+    
+    fieldset button {
+        width: 300px;
+    }
+}
+
+/*-----------------------------------
+-------------------------------------
+            880px SCREEN
+-------------------------------------
+-----------------------------------*/
+
+@media screen and (min-width: 880px) {
+    body {
+        display: grid;
+        margin: auto;
+        grid-template-columns: 1fr;
+        width: 880px;
+    }
+
+    header h1 {
+        width: 880px;
+        margin: auto;
+    }
+
+    input {
+        width: 820px;
+    }
+
+    #nav-style {
+        display: grid;
+        justify-self: center;
+    }
+
+    #submit-button {
+        display: grid;
+        justify-content: center;
+        width: 820px;
+    }
+    
+    fieldset button {
+        width: 600px;
+    }
+
+    #photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: top;
+    }
+
+    #hawaii {
+        position: relative;
+        top: -175px;
+    }
+}
+
+/*-----------------------------------
+-------------------------------------
+            1300px SCREEN
+-------------------------------------
+-----------------------------------*/
+
+@media screen and (min-width: 1300px) {
+    body {
+        display: grid;
+        margin: auto;
+        grid-template-columns: 1fr;
+        width: 1300px;
+    }
+
+    header h1 {
+        width: 1300px;
+        margin: auto;
+    }
+
+    input {
+        width: 1240px;
+    }
+
+    #nav-style {
+        display: grid;
+        justify-self: end;
+    }
+
+    #submit-button {
+        display: grid;
+        justify-content: center;
+        width: 1240px;
+    }
+
+    fieldset button {
+        width: 800px;
+    }
+
+    #photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #hawaii {
+        position: relative;
+        top: 0px;
+    }
+}
